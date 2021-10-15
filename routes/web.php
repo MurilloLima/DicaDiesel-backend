@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//routes admin
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+    Route::get('/', 'Panel\Admin\HomeController@index')->name('admin.index');
+
+    //volvo
+    Route::get('volvo/', 'Panel\Admin\VolvoController@index')->name('volvo.index');
+
+    // user
+    Route::get('usuario/senha/', 'Panel\Admin\User\PasswordController@index')->name('user.password');
+    Route::post('usuario/senha/update/', 'Panel\Admin\User\PasswordController@update')->name('user.password.update');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

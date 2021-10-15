@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+  <g id="Grupo_37" data-name="Grupo 37" transform="translate(3443 23)">
+    <g id="Grupo_36" data-name="Grupo 36">
+      <g id="Elipse_2" data-name="Elipse 2" transform="translate(-3443 -23)" fill="#6f6ff7" stroke="#fff" stroke-width="1">
+        <circle cx="28.5" cy="28.5" r="28.5" stroke="none"/>
+        <circle cx="28.5" cy="28.5" r="28" fill="none"/>
+      </g>
+      <text id="POP" transform="translate(-3440 15)" fill="#fff" font-size="24" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">POP</tspan></text>
+      <g id="Elipse_1" data-name="Elipse 1" transform="translate(-3443 -23)" fill="none" stroke="#fff" stroke-width="1">
+        <circle cx="28.5" cy="28.5" r="28.5" stroke="none"/>
+        <circle cx="28.5" cy="28.5" r="28" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

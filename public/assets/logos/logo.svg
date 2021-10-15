@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="280" viewBox="0 0 280 280">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="280" height="280" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repetição_de_grade_2" data-name="Repetição de grade 2" clip-path="url(#clip-path)">
+    <g id="Grupo_35" data-name="Grupo 35" transform="translate(3357.532 22.532)">
+      <g id="Grupo_6" data-name="Grupo 6" transform="translate(-3358 -23)">
+        <g id="Elipse_2" data-name="Elipse 2" transform="translate(0.468 0.468)" fill="#6f6ff7" stroke="#fff" stroke-width="1">
+          <circle cx="140" cy="140" r="140" stroke="none"/>
+          <circle cx="140" cy="140" r="139.5" fill="none"/>
+        </g>
+        <text id="Assistente_técnico" data-name="Assistente técnico" transform="translate(20.468 183.468)" fill="#fff" font-size="26" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Assistente Técnico</tspan></text>
+        <text id="POP" transform="translate(38.468 154.468)" fill="#fff" font-size="95" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">POP</tspan></text>
+        <g id="Elipse_1" data-name="Elipse 1" transform="translate(0.468 0.468)" fill="none" stroke="#fff" stroke-width="1">
+          <circle cx="140" cy="140" r="140" stroke="none"/>
+          <circle cx="140" cy="140" r="139.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
