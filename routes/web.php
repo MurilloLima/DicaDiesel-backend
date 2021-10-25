@@ -18,6 +18,15 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('/', 'Panel\Admin\HomeController@index')->name('admin.index');
 
+    //iveco
+    Route::get('iveco/', 'Panel\Admin\IvecoController@index')->name('iveco.index');
+
+    //mercedes
+    Route::get('mercedes-benz/', 'Panel\Admin\MercedesController@index')->name('mercedes.index');
+
+    //scania
+    Route::get('scania/', 'Panel\Admin\ScaniaController@index')->name('scania.index');
+
     //volvo
     Route::get('volvo/', 'Panel\Admin\VolvoController@index')->name('volvo.index');
 

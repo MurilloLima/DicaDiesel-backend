@@ -59,8 +59,8 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="{{ route('volvo.index') }}"
-                        class="nav-link {{ $activePage == 'volvo.index' ? ' active' : '' }}">
+                    <a href="{{ route('iveco.index') }}"
+                        class="nav-link {{ $activePage == 'iveco.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Iveco
@@ -68,8 +68,8 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="{{ route('volvo.index') }}"
-                        class="nav-link {{ $activePage == 'volvo.index' ? ' active' : '' }}">
+                    <a href="{{ route('mercedes.index') }}"
+                        class="nav-link {{ $activePage == 'mercedes.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Mercedes-Benz
@@ -77,8 +77,8 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="{{ route('volvo.index') }}"
-                        class="nav-link {{ $activePage == 'volvo.index' ? ' active' : '' }}">
+                    <a href="{{ route('scania.index') }}"
+                        class="nav-link {{ $activePage == 'scania.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Scania
