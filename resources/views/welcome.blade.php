@@ -24,7 +24,7 @@
         }
 
         .bg {
-            background-image: url('assets/admin/img/bg-001.jpeg');
+            background-image: url('assets/admin/img/bg-001.svg');
             width: 100%;
             height: 100vh;
             display: flex;
