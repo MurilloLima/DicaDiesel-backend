@@ -26,7 +26,6 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
         .input-group input {
             border-radius: 20px;
         }

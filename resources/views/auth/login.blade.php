@@ -30,12 +30,13 @@
         .input-group input {
             border-radius: 20px;
         }
-
+       
         .btn-orange {
             background-color: #6F6FF7;
             width: 278px;
             color: white;
             border-radius: 30px;
+            
         }
 
         .blackiconcolor {

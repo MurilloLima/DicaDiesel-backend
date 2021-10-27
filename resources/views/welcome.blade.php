@@ -42,6 +42,7 @@
             border: 1px #707070;
             padding: 10px 50px;
         }
+       
 
         .title {
             padding: 20px 0px;

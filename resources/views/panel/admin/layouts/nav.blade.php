@@ -94,7 +94,15 @@
                         </p>
                     </a>
                 </li>
-
+                <li class="nav-item has-treeview">
+                    <a href="{{ route('logout') }}" class="nav-link color-white" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                        <i class="fas fa-sign-out-alt color-orange"></i> Sair
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
