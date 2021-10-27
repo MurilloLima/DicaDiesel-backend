@@ -55,7 +55,8 @@
                         <img src="{{ asset('assets/logos/logo.png') }}" width="150" alt="">
                     </a>
                 </div>
-
+                <h4 class="title text-center">Login</h4>
+                <p class="text-center">Entre com seu login e password</p>
                 <form action="{{ route('login') }}" method="post">
                     @csrf
                     <div class="input-group mb-3">
@@ -90,6 +91,9 @@
                         <!-- /.col -->
                         <div class="col-12 text-center">
                             <button type="submit" class="btn btn-orange">Entrar</button>
+                        </div>
+                        <div class="col-12 text-center mt-2">
+                            <a href="{{ route('register') }}" class="btn btn-orange">Registrar-se</a>
                         </div>
                         <!-- /.col -->
                     </div>

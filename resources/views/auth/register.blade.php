@@ -55,7 +55,8 @@
                         <img src="{{ asset('assets/logos/logo.png') }}" width="150" alt="">
                     </a>
                 </div>
-
+                <h4 class="title text-center">Registrar-se</h4>
+                <p class="text-center">Preencha todos os campos</p>
                 <form action="{{ route('register') }}" method="post">
                     @csrf
                     <div class="input-group mb-3">
@@ -113,6 +114,9 @@
                         <!-- /.col -->
                         <div class="col-12 text-center">
                             <button type="submit" class="btn btn-orange">Registrar</button>
+                        </div>
+                        <div class="col-12 text-center mt-2">
+                            <a href="{{ route('login') }}" class="btn btn-orange">Já tenho conta</a>
                         </div>
                         <!-- /.col -->
                     </div>
