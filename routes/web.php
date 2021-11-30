@@ -20,6 +20,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
 
     //iveco
     Route::get('iveco/', 'Panel\Admin\IvecoController@index')->name('iveco.index');
+    Route::get('iveco/result/', 'Panel\Admin\IvecoController@result')->name('iveco.result');
 
     //mercedes
     Route::get('mercedes-benz/', 'Panel\Admin\MercedesController@index')->name('mercedes.index');

@@ -24,7 +24,7 @@
         }
 
         .bg {
-            background-image: url('assets/admin/img/bg-001.svg');
+            background-color: white;
             width: 100%;
             height: 100vh;
             display: flex;
@@ -36,38 +36,57 @@
 
         .form-group a {
             text-decoration: none;
-            background-color: #6F6FF7;
+            background-color: #151A1B;
             color: white;
             border-radius: 30px;
             border: 1px #707070;
             padding: 10px 50px;
         }
-       
+
 
         .title {
             padding: 20px 0px;
             color: white;
         }
+
+        div#loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('{{url('assets/admin/dist/img/4.gif')}}') 50% 50% no-repeat white;
+        }
     </style>
 </head>
 
 <body class="hold-transition login-page">
+    <div id="loader"></div>
     <section class="bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="form-group" style="flex-direction: column;">
-                        <img src="{{ asset('assets/logos/logo.svg') }}" width="240" alt="">
+                        <img src="{{ asset('assets/logos/logo.jpg') }}" width="240" alt="">
                         <p class="title">Bem vindo!</p>
-                        <a href="{{ route('login') }}" style="border: 1px solid #FFF;">Login</a>
-                        <a href="{{ route('register') }}" style="border: 1px solid #FFF;">Registrar-se</a>
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Registrar-se</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="{{ asset('assets/admin/plugins/jquery/jQuery-2.1.4.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script>
+        // Este evendo é acionado após o carregamento da página
+    jQuery(window).load(function() {
+        //Após a leitura da pagina o evento fadeOut do loader é acionado, esta com delay para ser perceptivo em ambiente fora do servidor.
+        jQuery("#loader").fadeOut("slow");
+    });
     </script>
 </body>
 

@@ -26,6 +26,7 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .input-group input {
             border-radius: 20px;
         }
@@ -40,10 +41,22 @@
         .blackiconcolor {
             color: #151A1B;
         }
+
+        div#loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('{{url('assets/admin/dist/img/4.gif')}}') 50% 50% no-repeat white;
+        }
     </style>
 </head>
 
 <body class="hold-transition login-page">
+    <div id="loader"></div>
+
     <div class="login-box">
 
         <!-- /.login-logo -->
@@ -133,12 +146,18 @@
     <!-- /.login-box -->
 
     <!-- jQuery -->
-    <script src="{{ asset('assets/admin/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/plugins/jquery/jQuery-2.1.4.min.js') }}"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- AdminLTE App -->
     <script src="{{ asset('assets/admin/dist/js/adminlte.min.js') }}"></script>
-
+    <script>
+        // Este evendo é acionado após o carregamento da página
+    jQuery(window).load(function() {
+        //Após a leitura da pagina o evento fadeOut do loader é acionado, esta com delay para ser perceptivo em ambiente fora do servidor.
+        jQuery("#loader").fadeOut("slow");
+    });
+    </script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>POP - @yield('title')</title>
-    <link rel="icon" href="{{ asset('assets/logos/icon.svg') }}" type="image/png" sizes="57x57">
+    <link rel="icon" href="{{ asset('assets/logos/icon.jpg') }}" type="image/png" sizes="57x57">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('assets/admin/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- overlayScrollbars -->

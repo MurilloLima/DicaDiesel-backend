@@ -60,7 +60,7 @@
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="{{ route('iveco.index') }}"
-                        class="nav-link {{ $activePage == 'admin.iveco.index' ? ' active' : '' }}">
+                        class="nav-link {{ $activePage == 'iveco.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Iveco
