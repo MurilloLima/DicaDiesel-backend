@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand" style="background-color: #6F6FF7;">
+<nav class="main-header navbar navbar-expand" style="background-color: #151A1B;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
         <li class="nav-item">
@@ -22,7 +22,7 @@
         <li class="nav-item">
             <a href="{{ route('logout') }}" class="nav-link color-white" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
-                <i class="fas fa-sign-out-alt color-orange"></i> Sair
+                <i class="fas fa-sign-out-alt"></i> Sair
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -37,7 +37,7 @@
 <aside class="main-sidebar elevation-4 sidebar-light-indigo">
     <!-- Brand Logo -->
     <a href="{{ route('admin.index') }}" class="brand-link">
-        <img src="{{ asset('assets/logos/logo.png') }}" alt="" class="brand-image" style="opacity: .8">
+        <img src="{{ asset('assets/logos/logo-sem-fundo.jpg') }}" alt="" class="brand-image" style="opacity: .8">
     </a>
 
     <!-- Sidebar -->
@@ -52,7 +52,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('admin.index') }}"
                         class="nav-link {{ $activePage == 'admin.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-home color-orange"></i>
+                        <i class="nav-icon fa fa-home"></i>
                         <p>
                             Home
                         </p>
@@ -60,7 +60,7 @@
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="{{ route('iveco.index') }}"
-                        class="nav-link {{ $activePage == 'iveco.index' ? ' active' : '' }}">
+                        class="nav-link {{ $activePage == 'admin.iveco.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Iveco
@@ -69,7 +69,7 @@
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="{{ route('mercedes.index') }}"
-                        class="nav-link {{ $activePage == 'mercedes.index' ? ' active' : '' }}">
+                        class="nav-link {{ $activePage == 'admin.mercedes.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Mercedes-Benz
@@ -78,7 +78,7 @@
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="{{ route('scania.index') }}"
-                        class="nav-link {{ $activePage == 'scania.index' ? ' active' : '' }}">
+                        class="nav-link {{ $activePage == 'admin.scania.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Scania
@@ -87,7 +87,7 @@
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="{{ route('volvo.index') }}"
-                        class="nav-link {{ $activePage == 'volvo.index' ? ' active' : '' }}">
+                        class="nav-link {{ $activePage == 'admin.volvo.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right color-orange"></i>
                         <p>
                             Volvo

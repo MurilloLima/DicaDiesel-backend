@@ -32,7 +32,7 @@
         }
        
         .btn-orange {
-            background-color: #6F6FF7;
+            background-color: #151A1B;
             width: 278px;
             color: white;
             border-radius: 30px;
@@ -40,7 +40,7 @@
         }
 
         .blackiconcolor {
-            color: #6F6FF7;
+            color: #151A1B;
         }
     </style>
 </head>
@@ -53,7 +53,7 @@
             <div style="border-radius: 50em !important" class="card-body login-card-body">
                 <div class="login-logo" style="margin: 50px 0px 40px 0px">
                     <a href="">
-                        <img src="{{ asset('assets/logos/logo.png') }}" width="150" alt="">
+                        <img src="{{ asset('assets/logos/logo.jpg') }}" width="150" alt="">
                     </a>
                 </div>
                 <h4 class="title text-center">Login</h4>

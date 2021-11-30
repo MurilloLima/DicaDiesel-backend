@@ -1,9 +1,9 @@
 .color-orange {
-    color: #6F6FF7;
+    color: #151A1B;
 }
 
 .bg-orange {
-    background-color: #6F6FF7;
+    background-color: #151A1B;
     color: white !important;
 }
 
@@ -29,20 +29,20 @@
 
 .form-group input {
     border-radius: 40px !important;
-    border-color: #6F6FF7;
+    border-color: #151A1B;
 }
 
 .input-group input {
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
-    border-color: #6F6FF7;
+    border-color: #151A1B;
     border-left: 0px;
 }
 
 
 .input-group-text{
     background-color: white;
-    border-color: #6F6FF7;
+    border-color: #151A1B;
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
 
@@ -50,18 +50,18 @@
 
 button {
     border-radius: 40px !important;
-    border-color: #6F6FF7;
+    border-color: #151A1B;
 
 }
 
 .form-group select {
     border-radius: 40px !important;
-    border-color: #6F6FF7;
+    border-color: #151A1B;
 }
 
 .form-group textarea {
     border-radius: 20px !important;
-    border-color: #6F6FF7;
+    border-color: #151A1B;
 }
 
 .card-title {
@@ -75,4 +75,8 @@ button {
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 20px;
     padding: 10px 15px;
+}
+
+.nav-link.active{
+    background-color: #151A1B !important;
 }
