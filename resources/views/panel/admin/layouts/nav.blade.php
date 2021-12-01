@@ -15,7 +15,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         {{-- <li class="nav-item">
-            <a class="nav-link color-white" href="{{ route('user.password') }}"><i class="fa fa-lock color-orange"></i>
+            <a class="nav-link color-white" href="{{ route('user.password') }}"><i class="fa fa-lock"></i>
                 Password</a>
         </li> --}}
 
@@ -61,7 +61,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('iveco.index') }}"
                         class="nav-link {{ $activePage == 'iveco.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right color-orange"></i>
+                        <i class="nav-icon fa fa-angle-right"></i>
                         <p>
                             Iveco
                         </p>
@@ -70,7 +70,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('mercedes.index') }}"
                         class="nav-link {{ $activePage == 'admin.mercedes.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right color-orange"></i>
+                        <i class="nav-icon fa fa-angle-right"></i>
                         <p>
                             Mercedes-Benz
                         </p>
@@ -79,7 +79,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('scania.index') }}"
                         class="nav-link {{ $activePage == 'admin.scania.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right color-orange"></i>
+                        <i class="nav-icon fa fa-angle-right"></i>
                         <p>
                             Scania
                         </p>
@@ -88,7 +88,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('volvo.index') }}"
                         class="nav-link {{ $activePage == 'admin.volvo.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right color-orange"></i>
+                        <i class="nav-icon fa fa-angle-right"></i>
                         <p>
                             Volvo
                         </p>
@@ -97,7 +97,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('logout') }}" class="nav-link color-white" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt color-orange"></i> Sair
+                        <i class="fas fa-sign-out-alt"></i> Sair
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

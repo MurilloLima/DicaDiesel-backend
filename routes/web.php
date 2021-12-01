@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -36,6 +25,37 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::post('usuario/senha/update/', 'Panel\Admin\User\PasswordController@update')->name('user.password.update');
 });
 
-Auth::routes();
 
+//dashboard
+Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
+    Route::get('/', 'Panel\Dashboard\HomeController@index')->name('dashboard.index');
+
+    //clientes
+    Route::get('clientes/', 'Panel\Dashboard\ClientController@index')->name('client.index');
+
+    //marcas
+    Route::get('marcas/', 'Panel\Dashboard\MarcaController@index')->name('marca.index');
+    Route::get('marca/create/', 'Panel\Dashboard\MarcaController@create')->name('marca.create');
+    Route::post('marca/store/', 'Panel\Dashboard\MarcaController@store')->name('marca.store');
+    Route::get('marca/edit/{id}', 'Panel\Dashboard\MarcaController@edit')->name('marca.edit');
+    Route::post('marca/update/{id}', 'Panel\Dashboard\MarcaController@update')->name('marca.update');
+    Route::get('marca/delete/{id}', 'Panel\Dashboard\MarcaController@delete')->name('marca.delete');
+
+    //modelos
+    Route::get('modelos/', 'Panel\Dashboard\ModeloController@index')->name('modelo.index');
+    Route::get('modelo/create/', 'Panel\Dashboard\ModeloController@create')->name('modelo.create');
+    Route::post('modelo/store/', 'Panel\Dashboard\ModeloController@store')->name('modelo.store');
+    Route::get('modelo/edit/{id}', 'Panel\Dashboard\ModeloController@edit')->name('modelo.edit');
+    Route::post('modelo/update/{id}', 'Panel\Dashboard\ModeloController@update')->name('modelo.update');
+    Route::get('modelo/delete/{id}', 'Panel\Dashboard\ModeloController@delete')->name('modelo.delete');
+
+    //Manual
+    Route::get('modelo/manual/{id}', 'Panel\Dashboard\IndiceController@index')->name('modelo.indice.index');
+    Route::get('modelo/manual/create', 'Panel\Dashboard\IndiceController@create')->name('modelo.indice.create');
+
+
+
+});
+
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
