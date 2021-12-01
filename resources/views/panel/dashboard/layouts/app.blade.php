@@ -185,6 +185,12 @@
      height: 300
  });
   </script>
+  <script>
+    tinymce.init({
+     selector:'textarea#edit2',
+     height: 300
+ });
+  </script>
   <!--tinymce end-->
 </body>
 

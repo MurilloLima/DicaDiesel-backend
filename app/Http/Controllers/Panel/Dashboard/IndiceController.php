@@ -17,7 +17,6 @@ class IndiceController extends Controller
     {
         $this->modelo = $modelo;
         $this->indice = $indice;
-
     }
     /**
      * Display a listing of the resource.
@@ -26,18 +25,8 @@ class IndiceController extends Controller
      */
     public function index($id)
     {
-        $data = $this->modelo->find($id);
-        return view('panel.dashboard.pages.indices.index', compact('data'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('panel.dashboard.pages.indices.create');
+        $data = $this->indice->where('modelo_id', $id)->paginate();
+        return view('panel.dashboard.pages.indices.index', compact('data', 'id'));
     }
 
     /**
@@ -63,16 +52,6 @@ class IndiceController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -83,7 +62,9 @@ class IndiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $this->indice->find($id);
+        $data->update($request->all());
+        return redirect()->back()->with('success', 'Atualizado com sucesso.');
     }
 
     /**
@@ -92,8 +73,9 @@ class IndiceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        $this->indice->destroy($id);
+        return redirect()->back()->with('success', 'Deletado com sucesso.');
     }
 }

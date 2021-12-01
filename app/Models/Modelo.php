@@ -21,4 +21,12 @@ class Modelo extends Model
     {
         return $this->hasMany(Indice::class);
     }
+
+    public static function boot()
+    {
+        parent::boot();
+        static::deleting(function ($user) { // before delete() method call this
+            $user->indices()->delete();
+        });
+    }
 }

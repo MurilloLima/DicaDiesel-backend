@@ -51,7 +51,10 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 
     //Manual
     Route::get('modelo/manual/{id}', 'Panel\Dashboard\IndiceController@index')->name('modelo.indice.index');
-    Route::get('modelo/manual/create', 'Panel\Dashboard\IndiceController@create')->name('modelo.indice.create');
+    Route::get('modelo/manual/create/', 'Panel\Dashboard\IndiceController@create')->name('modelo.indice.create');
+    Route::post('modelo/manual/store/', 'Panel\Dashboard\IndiceController@store')->name('modelo.indice.store');
+    Route::post('modelo/manual/udpate/{id}', 'Panel\Dashboard\IndiceController@update')->name('modelo.indice.update');
+    Route::get('modelo/manual/delete/{id}', 'Panel\Dashboard\IndiceController@delete')->name('modelo.indice.delete');
 
 
 

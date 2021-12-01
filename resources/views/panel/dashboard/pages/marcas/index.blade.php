@@ -5,15 +5,17 @@
 <div class="content-wrapper">
     <div class="content">
         <div class="container-fluid">
-            <div class="row" style="padding-top: 15px">
-                <div class="col-md-12">@include('panel.admin.includes.alerts')</div>
-            </div>
-            <div class="row" style="margin-bottom: 15px;">
+            <div class="row pt-3">
                 <div class="col-md-12">
-                    <a href="{{ route('marca.create') }}" class="btn btn-dark  float-right">Cadastrar</a>
+                    @include('panel.admin.includes.alerts')
                 </div>
             </div>
-            <div class="row">
+            <div class="row pt-3">
+                <div class="col-md-12">
+                    <a href="{{ route('marca.create') }}" class="btn btn-dark">Cadastrar</a>
+                </div>
+            </div>
+            <div class="row pt-3">
                 <div class="col-md-12">
                     <div class="card card-default">
                         <div class="card-header border-0">
@@ -48,6 +50,11 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        {{$data->links()}}
                     </div>
                 </div>
             </div>
