@@ -4,7 +4,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 //routes admin
-Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+Route::group(['prefix' => 'client', 'middleware' => ['auth', 'client']], function () {
     Route::get('/', 'Panel\Admin\HomeController@index')->name('admin.index');
 
     //iveco
@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
 
 
 //dashboard
-Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
+Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'admin']], function () {
     Route::get('/', 'Panel\Dashboard\HomeController@index')->name('dashboard.index');
 
     //clientes
@@ -61,4 +61,3 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');

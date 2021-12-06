@@ -58,15 +58,18 @@
                         </p>
                     </a>
                 </li>
+                {{-- @foreach ($marcas as $item)
                 <li class="nav-item has-treeview">
                     <a href="{{ route('iveco.index') }}"
                         class="nav-link {{ $activePage == 'iveco.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right"></i>
                         <p>
-                            Iveco
+                            {{$item->name}}
                         </p>
                     </a>
                 </li>
+                @endforeach --}}
+
                 <li class="nav-item has-treeview">
                     <a href="{{ route('mercedes.index') }}"
                         class="nav-link {{ $activePage == 'admin.mercedes.index' ? ' active' : '' }}">
