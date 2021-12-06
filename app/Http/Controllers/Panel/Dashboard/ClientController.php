@@ -20,7 +20,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $data = $this->client->where('role', 'client')->orderby('name', 'asc')->paginate();
+        $data = $this->client->where('role', 2)->orderby('name', 'asc')->paginate();
         return view('panel.dashboard.pages.clients.index', compact('data'));
     }
 

@@ -1,4 +1,4 @@
-@extends('panel.dashboard.layouts.app', ['activePage' => 'dashboard.index'])
+@extends('panel.dashboard.layouts.app', ['activePage' => 'admin.index'])
 @section('title', 'Dashboard')
 
 @section('content')

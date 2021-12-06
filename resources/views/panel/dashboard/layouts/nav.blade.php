@@ -34,10 +34,10 @@
 <!-- /.navbar -->
 
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar elevation-4 sidebar-light-indigo">
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('admin.index') }}" class="brand-link">
-        <img src="{{ asset('assets/logos/logo-sem-fundo.jpg') }}" alt="" class="brand-image" style="opacity: .8">
+        <img src="{{ asset('assets/logos/logo-sem-fundo.png') }}" alt="" class="brand-image" style="opacity: .8">
     </a>
 
     <!-- Sidebar -->
@@ -89,7 +89,7 @@
                 <li class="nav-item has-treeview">
                     <a href="{{ route('logout') }}" class="nav-link color-white" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt color-orange"></i>
+                        <i class="fas fa-sign-out-alt"></i>
                         <p>Sair</p>
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
