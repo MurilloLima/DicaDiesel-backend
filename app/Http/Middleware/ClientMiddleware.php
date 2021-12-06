@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class ClientMiddleware
 {
@@ -15,6 +16,10 @@ class ClientMiddleware
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if (Auth::user()->role != 2) {
+            return redirect()->route('dashboard.index');
+        } else {
+            return $next($request);
+        }
     }
 }
