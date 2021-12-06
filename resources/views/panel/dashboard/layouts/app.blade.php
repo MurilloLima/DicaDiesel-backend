@@ -182,13 +182,19 @@
   <script>
     tinymce.init({
      selector:'textarea#edit',
-     height: 300
+     height: 300,
+     plugins: 'table',
+     menubar: 'table',
+     toolbar: 'table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol'
  });
   </script>
   <script>
     tinymce.init({
      selector:'textarea#edit2',
-     height: 300
+     height: 300,
+     plugins: 'table',
+     menubar: 'table',
+     toolbar: 'table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol'
  });
   </script>
   <!--tinymce end-->
