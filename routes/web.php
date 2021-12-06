@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -7,24 +9,14 @@ Route::get('/', function () {
 Route::group(['prefix' => 'client', 'middleware' => ['auth', 'client']], function () {
     Route::get('/', 'Panel\Admin\HomeController@index')->name('admin.index');
 
-    //iveco
-    Route::get('iveco/', 'Panel\Admin\IvecoController@index')->name('iveco.index');
-    Route::get('iveco/result/', 'Panel\Admin\IvecoController@result')->name('iveco.result');
-
-    //mercedes
-    Route::get('mercedes-benz/', 'Panel\Admin\MercedesController@index')->name('mercedes.index');
-
-    //scania
-    Route::get('scania/', 'Panel\Admin\ScaniaController@index')->name('scania.index');
-
-    //volvo
-    Route::get('volvo/', 'Panel\Admin\VolvoController@index')->name('volvo.index');
+    //marcas
+    Route::get('marca/{slug}', 'Panel\Admin\MarcaController@slug')->name('marca.slug');
+    Route::post('marca/result/', 'Panel\Admin\MarcaController@result')->name('marca.result');
 
     // user
     Route::get('usuario/senha/', 'Panel\Admin\User\PasswordController@index')->name('user.password');
     Route::post('usuario/senha/update/', 'Panel\Admin\User\PasswordController@update')->name('user.password.update');
 });
-
 
 //dashboard
 Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'admin']], function () {

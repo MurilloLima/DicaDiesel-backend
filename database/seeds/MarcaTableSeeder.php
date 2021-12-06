@@ -13,17 +13,8 @@ class MarcaTableSeeder extends Seeder
     public function run()
     {
         DB::table('marcas')->insert([
-            'name' => 'Volvo',
-            'created_at' => '2020-12-29 12:12:12',
-            'updated_at' => '2020-12-29 12:12:12'
-        ]);
-        DB::table('marcas')->insert([
-            'name' => 'Mercedes-Benz',
-            'created_at' => '2020-12-29 12:12:12',
-            'updated_at' => '2020-12-29 12:12:12'
-        ]);
-        DB::table('marcas')->insert([
             'name' => 'Iveco',
+            'slug' => 'iveco',
             'created_at' => '2020-12-29 12:12:12',
             'updated_at' => '2020-12-29 12:12:12'
         ]);

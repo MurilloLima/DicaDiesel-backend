@@ -58,45 +58,18 @@
                         </p>
                     </a>
                 </li>
-                {{-- @foreach ($marcas as $item)
+                @foreach ($marcas as $item)
                 <li class="nav-item has-treeview">
-                    <a href="{{ route('iveco.index') }}"
-                        class="nav-link {{ $activePage == 'iveco.index' ? ' active' : '' }}">
+                    <a href="{{ route('marca.slug', ['slug'=>$item->slug]) }}"
+                        class="nav-link {{ $activePage == 'marca.slug' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-angle-right"></i>
                         <p>
                             {{$item->name}}
                         </p>
                     </a>
                 </li>
-                @endforeach --}}
+                @endforeach
 
-                <li class="nav-item has-treeview">
-                    <a href="{{ route('mercedes.index') }}"
-                        class="nav-link {{ $activePage == 'admin.mercedes.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right"></i>
-                        <p>
-                            Mercedes-Benz
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item has-treeview">
-                    <a href="{{ route('scania.index') }}"
-                        class="nav-link {{ $activePage == 'admin.scania.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right"></i>
-                        <p>
-                            Scania
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item has-treeview">
-                    <a href="{{ route('volvo.index') }}"
-                        class="nav-link {{ $activePage == 'admin.volvo.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-angle-right"></i>
-                        <p>
-                            Volvo
-                        </p>
-                    </a>
-                </li>
                 <li class="nav-item has-treeview">
                     <a href="{{ route('logout') }}" class="nav-link color-white" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">

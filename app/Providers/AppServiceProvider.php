@@ -24,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        $marcas = Marca::orderby('name', 'asc')->get();
+        view()->share([
+            'marcas' => $marcas
+        ]);
     }
 }
