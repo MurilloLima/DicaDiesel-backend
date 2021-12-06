@@ -67,7 +67,7 @@
                                     </div>
                                     {{-- end modal --}}
                                     @empty
-                                    <button type="button" class="btn btn-block btn-warning btn-xs">Ops! Não encontramos,
+                                    <button type="button" class="btn btn-block btn-warning btn-xs mb-3">Ops! Não encontramos,
                                         tente novamente!</button>
                                     @endforelse
                                 </div>
