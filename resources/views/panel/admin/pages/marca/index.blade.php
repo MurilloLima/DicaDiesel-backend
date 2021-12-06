@@ -43,7 +43,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     @forelse ($indices as $item)
-                                    <button type="button" class="btn btn-block btn-info btn-sm"
+                                    <button type="button" class="btn btn-block btn-info btn-sm mb-2"
                                         data-target="#content-{{$item->id}}"
                                         data-toggle="modal">{{$item->title}}</button>
                                     {{-- modal --}}
@@ -67,7 +67,7 @@
                                     </div>
                                     {{-- end modal --}}
                                     @empty
-                                    <button type="button" class="btn btn-block btn-warning btn-xs mb-3">Ops! Não encontramos,
+                                    <button type="button" class="btn btn-block btn-warning btn-xs">Ops! Não encontramos,
                                         tente novamente!</button>
                                     @endforelse
                                 </div>
