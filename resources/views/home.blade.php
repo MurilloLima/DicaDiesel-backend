@@ -19,6 +19,7 @@
                                     <img src="{{ asset('assets/logos/logo-sem-fundo.jpg') }}" alt=""
                                         class="img-fluid mb-2">
 
+                                        
                                     <p>Aqui no Dica Diesel você tirar dúvidas técnicas da manutenção dos veículos
                                         pesados, dados de fábrica e dicas de montagem e manutenção dos componentes de
                                         grandes
