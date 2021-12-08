@@ -16,10 +16,10 @@
                                 <div class="col-md-12">
                                     <h4 class="nv-title">Seja bem vindo!</h4>
 
-                                    <img src="{{ asset('assets/logos/logo-sem-fundo.jpg') }}" alt=""
+                                    <img src="{{ asset('assets/logos/logo-sem-fundo.png') }}" alt=""
                                         class="img-fluid mb-2">
 
-                                        
+
                                     <p>Aqui no Dica Diesel você tirar dúvidas técnicas da manutenção dos veículos
                                         pesados, dados de fábrica e dicas de montagem e manutenção dos componentes de
                                         grandes
