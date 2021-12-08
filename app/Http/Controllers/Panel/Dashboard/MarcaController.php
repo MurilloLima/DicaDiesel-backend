@@ -43,7 +43,10 @@ class MarcaController extends Controller
      */
     public function store(MarcaRequest $request)
     {
-        $this->marca->create($request->all());
+        $this->marca->create([
+            'name' => $request->name,
+            'slug' => str_slug($request->name)
+        ]);
         return redirect()->route('marca.index')->with('success', 'Cadastrado');
     }
 
@@ -80,7 +83,10 @@ class MarcaController extends Controller
     public function update(Request $request, $id)
     {
         $data = $this->marca->find($id);
-        $data->update($request->all());
+        $data->update([
+            'name' => $request->name,
+            'slug' => str_slug($request->name)
+        ]);
         return redirect()->route('marca.index')->with('success', 'Atualizado');
     }
 
